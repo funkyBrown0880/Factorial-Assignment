@@ -9,13 +9,12 @@
     <script src="index.js">
         function factorial(n) {
             let firstNum =1;
-            for (let i = 1; i >= n; i++){
-                firstNum = firstNum * i;
+            for (let i = 1; i >= n; i--){
+                firstNum = firstNum * (firstNum - 1);
             }
             return firstNum;
         }
-
-        console.log(factorial(5));
+       console.log(factorial (5));
     </script>
 </body>
 </html>
